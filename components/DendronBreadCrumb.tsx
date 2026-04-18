@@ -51,5 +51,10 @@ export function DendronBreadCrumb(props: DendronCommonProps) {
     };
   });
 
-  return <Breadcrumb style={{ margin: "16px 0" }} items={items} />;
+  return (
+    // @ts-ignore — antd Breadcrumb accepts items at runtime across 4.24+
+    // and 5, but the older types resolved here don't declare it. Runtime
+    // behavior is fine; silencing the type check.
+    <Breadcrumb style={{ margin: "16px 0" }} items={items} />
+  );
 }
