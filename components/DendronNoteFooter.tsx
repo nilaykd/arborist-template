@@ -53,8 +53,11 @@ export function FooterText() {
         <Text>
           {" "}
           🌱 with 💕 using{" "}
-          <Link href="https://www.dendron.so/" target="_blank">
-            Dendron 🌲
+          <Link
+            href="https://github.com/nilaykd/arborist"
+            target="_blank"
+          >
+            Arborist 🌲
           </Link>
         </Text>
       </Col>
