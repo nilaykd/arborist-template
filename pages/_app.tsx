@@ -125,7 +125,7 @@ function DendronApp({
         note={pageProps.note}
       >
         <Head>
-          <link rel="icon" href={getAssetUrl("/favicon.ico")} />
+          <link rel="icon" type="image/png" href={getAssetUrl("/favicon.png")} />
         </Head>
         <Component
           {...pageProps}
